@@ -69,13 +69,14 @@ In LDA topic modelling, 25 topics were generated from the review text. For the m
 -	General positive sentiment (e.g. great product, recommend) 
 -	General negative sentiment (e.g. waste of money, didn’t work)
 
-If you are interested in looking at the topics in more detail, I have generated an interactive visualization of the topic models which you can access through the file *ldavis_prepared_25.html*. I recommend changing the relevance metric to 0.2 to get the most relevant terms within each topic. For reference on how the topics were generated, refer to *6A_LDA_topic_modelling.ipynb*.
+If you are interested in looking at the topics in more detail, I have generated an interactive visualization of the topic models which you can access through the file *ldavis_prepared_25.html*<sup>a</sup>. I recommend changing the relevance metric to 0.2 to get the most relevant terms within each topic. For reference on how the topics were generated, refer to *6A_LDA_topic_modelling.ipynb*.
 
 As mentioned previously, fake reviews would generally use general terms and make grand claims. Through LDA topic modelling, there were several topics that do fit this description. This gives a good sense that there are possibly fake reviews within the corpus - this can be used to now compare with clusters found via KMeans clustering.
 
-Through KMeans clustering, 25 clusters were generated and 2 clusters were identified (18 and 24) that had all the telltale signs of fake reviews. They had mostly 5-star ratings, low word counts, use of general positive terms and grand claims. For example, as shown in figure 1, clusters 24 and 18 are among clusters with the largest prominence values for the words excellent, love and great product. Here prominence means that these tokens were highly occurring in the reviews of these clusters<sup>a</sup>. 
+Through KMeans clustering, 25 clusters were generated and 2 clusters were identified (18 and 24) that had all the telltale signs of fake reviews. They had mostly 5-star ratings, low word counts, use of general positive terms and grand claims. For example, as shown in figure 1, clusters 24 and 18 are among clusters with the largest prominence values for the words excellent, love and great product. Here prominence means that these tokens were highly occurring in the reviews of these clusters<sup>b</sup>. 
 
-###### a The prominence value was generated from: 1) TF IDF vectorization, 2)  applying PCA, 3) selecting the first 350 principal components (PCs) and 4) reconstructing values in original features from PCs after KMeans clustering was applied. 
+###### a To view the html file, I recommend using https://htmlpreview.github.io/ to view it by simply pasting the html file path into the website's url field. 
+###### b The prominence value was generated from: 1) TF IDF vectorization, 2)  applying PCA, 3) selecting the first 350 principal components (PCs) and 4) reconstructing values in original features from PCs after KMeans clustering was applied. 
 
 ![top terms](images/terms_18and24.jpg)
 <div align="center"> Figure 1. Prominence of the tokens excellent, love and great product within each cluster. </div>
@@ -125,7 +126,7 @@ I have a python script file named 'functions_library.py'. This file contains man
 I included the 2 models from my project which are saved as pkl files within the folder 'Models'. The KMeans model is named 'kmeans_model25.pkl'. The LDA model is named 'lda_25.pkl'.
 
 ### LDA Visualization
-I also included a visualization based on the LDA model. It can be viewed by accessing the 'ldavis_prepared_25.html' file.
+I also included a visualization based on the LDA model. It can be viewed by accessing the 'ldavis_prepared_25.html' file. I recommend using https://htmlpreview.github.io/ to view the file.
 
 
 ### References
