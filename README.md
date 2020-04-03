@@ -79,20 +79,20 @@ Through KMeans clustering, 25 clusters were generated and 2 clusters were identi
 
 ![top terms](images/terms_18and24.jpg)
 <div align="center"> Figure 1. Prominence of the tokens excellent, love and great product within each cluster. </div>
-
+<br>
 The qualities of reviews from cluster 18 and 24 match the qualities of fake reviews that were described at the outset of this project. This gives a good indication that these clusters may contain fake reviews. Again, we cannot conclusively say that a review is fake or not. However, if a review fits into one of these clusters, we can flag it as potentially being a fake review. 
 
 Additionally, another cluster presented a unique scenario. Cluster 22 contained reviews of people who may have been incentivized to give good reviews, evidenced by having the highest prominence values for tokens such as exchange, discount, free, honest review, and received product (figure 2). This does not necessarily mean these reviews are fake as the reviewers may have gave their honest opinion as evidenced by the tokens honest review and unbiased, but it indicates that they may be unreliable because the reveiwer may have been more inclined to give a good rating in exchange for receiving the product for free. 
 
 ![top terms](images/terms_22.jpg)
 <div align="center"> Figure 2. Prominence of the tokens exchange, free, discount, received product, honest review and unbiased within each cluster. </div>
-
+<br>
 In comparison to the LDA model, the LDA model also picked up in this cluster of incentivized reviews as evidenced by topic 7. Some of the most relevant terms in topic 7 included exchange, discount, received product and honest review (figure 3).
 
 ![top terms](images/topic_7_lda.jpg)
 <div align="center"> Figure 3. Most relevant terms in topic 7 from the LDA model. </div>
-
-In conclusion, we can summarize the findings as follows:
+<br>
+In **conclusion**, we can summarize the findings as follows:
 - Clusters 24 and 18 have the most telltale features of fake reviews (5 stars, low word count, use of general positive terms)
 - This was not yet mentioned but the key difference between clusters 24 and 18 is reviewer behaviour. Reviewers in cluster 24 post more than 1 review where as in 18, they have only posted 1 review. This may indicate that some fake reviewers review multiple products where as in other cases, reviewers use different accounts perhaps to review the same product.
 - Cluster 22 contains reviews of people who may have been incentivized to give reviews; this does not necessarily mean the reviews are fake as they could have been giving their honest opinion but they may be unreliable as the individual may be more inclined to give a good rating in exchange for receiving the product for free
@@ -137,7 +137,7 @@ I also included a visualization based on the LDA model. It can be viewed by acce
 
 ---
 
-<strong>Thank you for taking the time to look at my project. If you have any comments, feedback or suggestions, please reach out to me. I am also open to collaborating on interesting ML projects.</strong>
+<strong>Thank you for taking the time to look at my project. If you have any comments, feedback or suggestions, please reach out to me. I am also open to collaborating on interesting ML projects. Again, please reach out if you would like to collaborate.</strong>
 
 #### My contact Info:
 <strong>email: ali.eddeb@gmail.com <br>
