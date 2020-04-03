@@ -93,6 +93,7 @@ In comparison to the LDA model, the LDA model also picked up in this cluster of 
 ![top terms](images/topic_7_lda.jpg)
 <div align="center"> Figure 3. Most relevant terms in topic 7 from the LDA model. </div>
 <br>
+
 In **conclusion**, we can summarize the findings as follows:
 - Clusters 24 and 18 have the most telltale features of fake reviews (5 stars, low word count, use of general positive terms)
 - This was not yet mentioned but the key difference between clusters 24 and 18 is reviewer behaviour. Reviewers in cluster 24 post more than 1 review where as in 18, they have only posted 1 review. This may indicate that some fake reviewers review multiple products where as in other cases, reviewers use different accounts perhaps to review the same product.
