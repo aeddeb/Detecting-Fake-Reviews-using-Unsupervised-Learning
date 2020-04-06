@@ -78,7 +78,7 @@ Through KMeans clustering, 25 clusters were generated and 2 clusters were identi
 ###### a To view the html file, I recommend using https://htmlpreview.github.io/ to view it by simply pasting the html file path into the website's url field. 
 ###### b The prominence value was generated from: 1) TF IDF vectorization, 2)  applying PCA, 3) selecting the first 350 principal components (PCs) and 4) reconstructing values in original features from PCs after KMeans clustering was applied. 
 
-![top terms](images/terms_18and24.jpg)
+![top terms](images/terms18and24.png)
 <div align="center"> Figure 1. Prominence of the tokens excellent, love and great product within each cluster. </div>
 <br>
 The qualities of reviews from cluster 18 and 24 match the qualities of fake reviews that were described at the outset of this project. This gives a good indication that these clusters may contain fake reviews. Again, we cannot conclusively say that a review is fake or not. However, if a review fits into one of these clusters, we can flag it as potentially being a fake review. 
@@ -136,6 +136,7 @@ I also included a visualization based on the LDA model. It can be viewed by acce
 - https://pandas.pydata.org/pandas-docs/stable/user_guide/groupby.html#aggregation
 - https://towardsdatascience.com/end-to-end-topic-modeling-in-python-latent-dirichlet-allocation-lda-35ce4ed6b3e0
 - https://github.com/kapadias/mediumposts/blob/master/nlp/published_notebooks/Introduction%20to%20Topic%20Modeling.ipynb
+- Justifying recommendations using distantly-labeled reviews and fined-grained aspects. Jianmo Ni, Jiacheng Li, Julian McAuley. *Empirical Methods in Natural Language Processing (EMNLP)*, 2019
 
 ---
 
